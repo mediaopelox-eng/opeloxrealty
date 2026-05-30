@@ -36,7 +36,7 @@
         <div class="col-lg-3 col-md-4">
           <h6 class="text-white mb-3">Contact</h6>
           <p class="mb-2"><a href="https://maps.app.goo.gl/nwdGaeNaJtNq6hdN9" target="_blank">3rd Floor, Arihant Aura, Office No.001, A Wing, Turbhe MIDC, Turbhe, Navi Mumbai, Maharashtra 400703</a></p>
-          <p class="mb-2"><a href="mailto:info@opeloxrealty.com">info@opeloxrealty.com</a></p>
+          <p class="mb-2 small-case"><a href="mailto:info@opeloxrealty.com">info@opeloxrealty.com</a></p>
           <p class="mb-0 phone"><a href="tel:+91 99871 12343">+91 99871 12343</a>, <a href="tel:+91 98672 00042">+91 98672 00042</a></p>
         </div>
       </div>
@@ -48,3 +48,62 @@
       </div>
     </div>
   </footer>
+  <!-- Sticky Enquiry Button -->
+<button class="sticky-enquiry-btn" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+  <i class="bi bi-chat-dots-fill"></i>
+  Enquire Now
+</button>
+
+<!-- Enquiry Modal -->
+<div class="modal fade" id="enquiryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content enquiry-modal">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Enquire Now</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="29f4b0d5-8036-4c93-8e6f-aac0ec664cb8">
+
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Full Name*" name="Full Name" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number*" maxlength="10" name="Phone Number" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Address" name="Email Address">
+          </div>
+
+          <div class="mb-3">
+            <select class="form-select" name="Requirement">
+              <option selected>Requirement</option>
+              <option>Buy Property</option>
+              <option>Sell Property</option>
+              <option>Rent / Lease</option>
+              <option>Investment</option>
+              <option>Commercial Property</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Budget Range" name="Budget Range">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Preferred Location" name="Preferred Location">
+          </div>
+          <div class="mb-4">
+            <textarea class="form-control" placeholder="Message" name="Message"></textarea>
+          </div>
+          <button type="submit" class="btn-red w-100">
+            Submit Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
